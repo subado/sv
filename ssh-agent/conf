@@ -1,0 +1,2 @@
+# Use -d to debug or -D to normal work
+MODE='-D'
