@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec ssh-agent -D -a "${TMPDIR:-/tmp}/ssh-agent.socket" >/dev/null 2>&1
