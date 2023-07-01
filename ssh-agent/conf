@@ -1,2 +1,6 @@
-# Use -d to debug or -D to normal work
+# Use -d to debug or -D to normal work.
 MODE='-D'
+
+# -t
+#   Set a default value for the maximum lifetime of identities added to the agent.
+OPTS='-t 12h'
