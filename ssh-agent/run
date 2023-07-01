@@ -3,4 +3,4 @@
 exec 2>&1
 [ -r conf ] && . ./conf
 
-exec ssh-agent "$MODE" -a "${TMPDIR:-/tmp}/ssh-agent.socket"
+exec ssh-agent "$MODE" "$OPTS" -a "${TMPDIR:-/tmp}/ssh-agent.socket"
