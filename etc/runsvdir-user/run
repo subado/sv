@@ -1,0 +1,8 @@
+#!/bin/sh
+
+export USER="user"
+export HOME="/home/${USER}/"
+
+svdir="$HOME/.local/share/service"
+
+exec chpst -u "$USER" runsvdir -P "$svdir"
